@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fbeaea;
+}
+
+/* Navigation (Full Width) */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d66b6b;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Search Bar */
+.search-bar input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Sign-Up Button */
+.signup-btn {
+    background-color: #d66b6b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Container (Keeps Everything 100px Away from Left & Right) */
+.container {
+    margin-top: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+section{
+    margin: 25px 0px;
+}
+
+.mainBanner{
+    border-radius: 10px;
+}
+
+/* Hero Section */
+.appointment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background: #FFF5F3;
+    border-radius: 10px;
+    max-height: none; 
+}
+
+.appointment-text {
+    max-width: 60%;
+}
+
+.appointment-image {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.appointment-image img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.appointment button {
+    background-color: #d66b6b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 300px;
+    min-width: 250px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.appointment button:hover {
+    background-color: #b74747;
+}
+
+/* Pregnancy Myths Section */
+.myths-section {
+    text-align: center;
+}
+
+.myth-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.myth-item {
+    display: inline-block;
+    text-decoration: none;
+    color: #333; /* Default text color */
+    font-weight: normal;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    width: 250px;
+    text-align: center;
+}
+
+/* Prevent link styling */
+.myth-item a {
+    text-decoration: none;
+    color: inherit; /* Makes links look like normal text */
+    font-weight: bold;
+    display: block;
+}
+
+.myth-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* General styling for both sections */
+.predict,.appointment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin-bottom: 40px;
+    padding-left: 100px;
+    border-radius: 10px;
+}
+
+/* Styling for text content */
+.predict-text {
+    max-width: 50%;
+}
+
+.predict-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.predict-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+
+/* Styling for the predict section when screen size is smaller */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .predict-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .predict-image img {
+        max-width: 80%;
+    }
+}
+
+
+.predict button {
+    background-color: #d66b6b;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 300px;
+    min-width: 250px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.predict button:hover {
+    background-color: #b74747;
+}
+
+/* Appointments Section */
+.info-conatiner {
+    text-align: center;
+    padding: 30px;
+}
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.info {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.predict-image{
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+}
+.predict-image img {
+        max-width: 200px;
+        height: auto;
+        border-radius: 0px 10px 10px 0px;
+    }

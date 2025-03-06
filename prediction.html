@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Risk Prediction</title>
+    <link rel="stylesheet" href="prediction.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pregnancy Risk Prediction</h1>
+        <form id="riskForm">
+            <label>Age: <input type="number" id="age" required></label>
+            <label>Gravida: <input type="number" id="gravida" required></label>
+            <label>Gestation: <input type="number" id="gestation" required></label>
+            <label>Weight (kg): <input type="number" id="weight" required></label>
+            <label>Height (m): <input type="number" id="height" required></label>
+            <label>Systolic BP: <input type="number" id="systolicBP" required></label>
+            <label>Diastolic BP: <input type="number" id="diastolicBP" required></label>
+            <label>Anemia (0/1): <input type="number" id="anemia" required></label>
+            <label>Jaundice (0/1): <input type="number" id="jaundice" required></label>
+            <label>Baby Position: <input type="number" id="babyPosition" required></label>
+            <label>Baby Movement: <input type="number" id="babyMovement" required></label>
+            <label>Baby Heart Rate: <input type="number" id="babyHeartRate" required></label>
+            <label>Urine Test (0/1): <input type="number" id="urineTest" required></label>
+            <button type="button" onclick="predictRisk()">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="prediction.js"></script>
+</body>
+</html>

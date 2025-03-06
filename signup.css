@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Bubble Animation */
+.bubble-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubble {
+    position: absolute;
+    background: rgba(214, 107, 107, 0.3);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: floatBubble linear infinite;
+}
+
+@keyframes floatBubble {
+    0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-10vh) scale(1.3);
+        opacity: 0;
+    }
+}
+
+/* Form Box */
+.form-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Slightly wider */
+    text-align: center;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%; /* Full width alignment */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures proper width */
+}
+
+/* Error Message */
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Submit Button */
+button {
+    background-color: #d66b6b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Button matches input width */
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b74747;
+}

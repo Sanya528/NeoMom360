@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Calendar</title>
+    <link rel="stylesheet" href="appointments.css">
+</head>
+<body>
+    <div class="bubble-container"></div>
+    <div class="container">
+        <div class="form-box" id="booking-section">
+            <h2>Book an Appointment</h2>
+            <div class="input-group">
+                <label for="name">Appointment Name:</label>
+                <input type="text" id="name" placeholder="Enter appointment name">
+            </div>
+            
+            <div class="input-group">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date">
+            </div>
+            
+            <div class="input-group">
+                <label for="time">Select Time:</label>
+                <input type="time" id="time">
+            </div>
+        
+            <button onclick="bookAppointment()">Book</button>
+        </div>
+        
+        <div class="form-box appointments-section" id="appointments-section">
+            <h2>Your Appointments</h2>
+            <ul id="appointments-list"></ul>
+        </div>
+    </div>
+    
+    <audio id="notification-sound" src="https://www.myinstants.com/media/sounds/alarm.mp3"></audio>
+    
+    <script src="appointments.js"></script>
+    
+</body>
+</html>

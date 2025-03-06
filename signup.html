@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <!-- Bubble Animation Container -->
+    <div class="bubble-container"></div>
+
+    <!-- Form Container -->
+    <div class="form-container">
+        <div class="form-box">
+            <h2>Sign Up</h2>
+            <p id="error-message"></p>
+            <form id="user-form">
+                <div class="input-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="Enter your full name">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Choose a username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

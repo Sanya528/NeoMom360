@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.form-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.appointments-section {
+    overflow-y: auto;
+}
+
+#booking-section, #appointments-section {
+    height: 400px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #d66b6b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b74747;
+}
+
+.delete-btn{
+    width: 100px;
+}
+
+.appointment-item{
+    text-align: left;
+}
