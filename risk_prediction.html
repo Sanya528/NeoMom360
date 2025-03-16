@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Risk Prediction</title>
+    <link rel="stylesheet" href="risk_prediction.css">
+</head>
+<body>
+    <div class="form-box">
+        <h2>Pregnancy Risk Prediction</h2>
+        <p class="disclaimer">This tool provides an AI-based risk assessment. Consult a doctor for better advice.</p>
+
+        <form id="predictForm">
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter your age" required>
+                </div>
+                <div class="input-group">
+                    <label for="temperature">Body Temperature (°F)</label>
+                    <input type="number" id="temperature" step="any" placeholder="Enter body temperature" required>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="systolicBP">Systolic Blood Pressure (mm Hg)</label>
+                    <input type="number" id="systolicBP" placeholder="Enter systolic BP" required>
+                </div>
+                <div class="input-group">
+                    <label for="diastolicBP">Diastolic Blood Pressure (mm Hg)</label>
+                    <input type="number" id="diastolicBP" placeholder="Enter diastolic BP" required>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="heartRate">Heart Rate (bpm)</label>
+                    <input type="number" id="heartRate" placeholder="Enter heart rate" required>
+                </div>
+                <div class="input-group">
+                    <label for="bmi">BMI (kg/m²)</label>
+                    <input type="number" step="any" id="bmi" placeholder="Enter BMI" required>
+                </div>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="hba1c">Blood Glucose (HbA1c)</label>
+                    <input type="number" id="hba1c" step="any" placeholder="Enter HbA1c" required>
+                </div>
+                <div class="input-group">
+                    <label for="fastingGlucose">Blood Glucose (Fasting - mg/dl)</label>
+                    <input type="number" id="fastingGlucose" step="any" placeholder="Enter fasting glucose" required>
+                </div>
+            </div>
+
+            <button type="submit" id="predict-btn">Predict Risk</button>
+        </form>
+        
+        <div id="predictionResult"></div>
+    </div>
+
+    <script src="risk_prediction.js"></script>
+</body>
+</html>

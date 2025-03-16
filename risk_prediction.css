@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form Box */
+.form-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 650px;
+    text-align: center;
+}
+
+/* Title */
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Disclaimer */
+.disclaimer {
+    font-size: 14px;
+    color: #d66b6b;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Input Row (for 2-column layout) */
+.input-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Input Groups */
+.input-group {
+    flex: 1;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Submit Button */
+button {
+    background-color: #d66b6b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b74747;
+}
+
+/* Prediction Result */
+#predictionResult {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}

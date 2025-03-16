@@ -79,6 +79,7 @@ section{
     background: #FFF5F3;
     border-radius: 10px;
     max-height: none; 
+    padding-left: 100PX;
 }
 
 .appointment-text {
@@ -160,25 +161,84 @@ section{
     align-items: center;
     background-color: #f9f9f9;
     margin-bottom: 40px;
-    padding-left: 100px;
     border-radius: 10px;
+}
+
+.predict {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
 }
 
 /* Styling for text content */
 .predict-text {
     max-width: 50%;
+    flex: 1; /* Allow text to take available space */
+    padding: 20px 100px 20px 30px;
 }
 
 .predict-text h1 {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduce spacing */
 }
 
 .predict-text p {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduce spacing */
     color: #555;
+}
+
+/* Image styling */
+.predict-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.predict-image img {
+    max-width: 200px; /* Slightly reduce image size */
+    height: auto;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: -5px; /* Adjust positioning */
+}
+
+/* Button styling */
+.predict button {
+    background-color: #d66b6b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 300px;
+    min-width: 250px;
+    font-size: 18px;
+    margin-top: 5px; /* Reduce spacing */
+}
+
+.predict button:hover {
+    background-color: #b74747;
+}
+
+
+/* Appointments Section */
+.info-conatiner {
+    text-align: center;
+    padding: 30px;
+}
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.info {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -199,50 +259,3 @@ section{
         max-width: 80%;
     }
 }
-
-
-.predict button {
-    background-color: #d66b6b;
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    max-width: 300px;
-    min-width: 250px;
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.predict button:hover {
-    background-color: #b74747;
-}
-
-/* Appointments Section */
-.info-conatiner {
-    text-align: center;
-    padding: 30px;
-}
-.info-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.info {
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.predict-image{
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-}
-.predict-image img {
-        max-width: 200px;
-        height: auto;
-        border-radius: 0px 10px 10px 0px;
-    }
